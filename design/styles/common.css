@@ -6,25 +6,37 @@
 .containter {
   margin: 40px auto;
   max-width: 1000px;
+  position: relative;
 }
 
 .age-range {
+  border: none;
+  appearance: none;
   height: 60px;
-  width: 60%;
-  margin-left: 20%;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 20px;
   border: 2px solid #e5e5e5;
   border-radius: 20px;
+  background-image: linear-gradient(RGBA(37, 20, 37, 1), RGBA(1, 6, 19, 1));
+  color: #d08bde;
+  font-size: 20px;
 }
 
-.age-range button {
-  height: 50px;
-  width: 90px;
-  color: #d08bde;
-  border-radius: 30%;
-  border: 1px solid #e5e5e5;
-  /* background-color: ; */
-  margin-top: 5px;
-  margin-right: 10px;
+option {
   font-size: 20px;
-  float: right;
+  text-align: center;
+}
+
+.containter::after {
+  content: "\25BC";
+  font-size: 30px;
+  color: #d08bde;
+  position: absolute;
+  right: 320px;
+  top: 33px;
+}
+
+.containter:hover::after {
+  color: #ff9379;
 }
