@@ -1,3 +1,10 @@
+.age-result-text {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+  color: #7c378a;
+}
+
 table {
   border-collapse: separate;
   border-spacing: 0;
