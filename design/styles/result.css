@@ -1,0 +1,34 @@
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: solid #97898d 1px;
+  border-radius: 10px;
+  width: 100%;
+  /* margin-left: 20%; */
+  margin-top: 20px;
+}
+th,
+td {
+  border-left: solid #97898d 1px;
+  /* border-top: solid #97898d 1px; */
+}
+
+td:first-child,
+th:first-child {
+  border-left: none;
+}
+
+th {
+  height: 50px;
+  text-align: center;
+  background: #ff9379;
+  border-bottom: #97898d 1px solid;
+  border-radius: 10px;
+}
+
+td {
+  height: 400px;
+  padding-top: 20px;
+  vertical-align: top;
+  text-align: center;
+}
