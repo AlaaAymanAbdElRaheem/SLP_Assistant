@@ -7,12 +7,12 @@ import inspect
 import pep8
 import models
 from models.base_model import BaseModel
-from models.child_milestones import ChildMilestones
+from models.child_milestone import ChildMilestone
 from models.engine import db_storage
 
 
 DBStorage = db_storage
-classes = {"ChildMilestones": ChildMilestones, "BaseModel": BaseModel}
+classes = {"ChildMilestone": ChildMilestone, "BaseModel": BaseModel}
 
 
 class TestDBStorageDocs(unittest.TestCase):

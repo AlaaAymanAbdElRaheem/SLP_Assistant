@@ -3,12 +3,14 @@
 import cmd
 import models
 from models import storage
-from models.child_milestones import ChildMilestones
+from models.child_milestone import ChildMilestone
 from models.base_model import BaseModel
+from models.age_range import AgeRange
+from models.category import Category
 import shlex  # for splitting the line along spaces except in double quotes
 
 
-classes = {"ChildMilestones": ChildMilestones, "BaseModel": BaseModel}
+classes = {"ChildMilestone": ChildMilestone, "BaseModel": BaseModel, "AgeRange": AgeRange, "Category": Category}
 
 
 class SLPCommand(cmd.Cmd):

@@ -4,12 +4,14 @@
 import models
 from os import getenv
 from models.base_model import BaseModel, Base
-from models.child_milestones import ChildMilestones
+from models.child_milestone import ChildMilestone
+from models.age_range import AgeRange
+from models.category import Category
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
 
 
-classes = {'ChildMilestones': ChildMilestones}
+classes = {'ChildMilestone': ChildMilestone, 'AgeRange': AgeRange, 'Category': Category}
 
 
 class DBStorage:

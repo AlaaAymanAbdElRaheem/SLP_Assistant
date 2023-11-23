@@ -12,6 +12,7 @@ Base = declarative_base()
 
 class BaseModel:
     '''This class defines the BaseModel class for all other classes'''
+
     def __init__(self, *args, **kwargs):
         '''This method initializes an instance of the BaseModel class'''
         if kwargs:
