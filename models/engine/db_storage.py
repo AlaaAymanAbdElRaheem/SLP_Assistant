@@ -53,7 +53,7 @@ class DBStorage:
                                        expire_on_commit=False)
         Session = scoped_session(session_factory)
         self.__session = Session()
-    
+
     def all(self, cls=None):
         '''Returns a dictionary of all objects in the database'''
         if cls:
@@ -62,7 +62,8 @@ class DBStorage:
             objects = []
             for cls in classes:
                 objects += self.__session.query(classes[cls]).all()
-        return {'{}.{}'.format(type(obj).__name__, obj.id): obj for obj in objects}
+        return {'{}.{}'.format(type(obj).__name__, obj.id):
+                obj for obj in objects}
 
     def close(self):
         '''Close the session'''
