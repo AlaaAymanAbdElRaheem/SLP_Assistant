@@ -13,8 +13,9 @@ class AgeRange(BaseModel, Base):
     age_from = Column(Integer, nullable=False, default=0)
     age_to = Column(Integer, nullable=False, default=0)
 
-    child_milestones = relationship("ChildMilestone", back_populates="age_range", cascade="all, delete-orphan")
-
+    child_milestones = relationship("ChildMilestone",
+                                    back_populates="age_range",
+                                    cascade="all, delete-orphan")
 
     def __init__(self, *args, **kwargs):
         '''Initializes an instance of the AgeRange class'''
@@ -23,7 +24,9 @@ class AgeRange(BaseModel, Base):
     def __str__(self):
         '''Returns a string representation of an instance of AgeRange'''
         return "[[{}] ({}) from {} to {}]".format(self.__class__.__name__,
-                                        self.id, self.age_from, self.age_to)
+                                                  self.id,
+                                                  self.age_from,
+                                                  self.age_to)
 
     def to_dict(self):
         '''Returns a dictionary representation of an instance of AgeRange'''

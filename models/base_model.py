@@ -10,6 +10,7 @@ import models
 
 Base = declarative_base()
 
+
 class BaseModel:
     '''This class defines the BaseModel class for all other classes'''
 

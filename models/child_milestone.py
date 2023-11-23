@@ -16,9 +16,14 @@ class ChildMilestone(BaseModel, Base):
     age_range_id = Column(Integer, ForeignKey('age_ranges.id'), nullable=False)
     value = Column(String(200), nullable=False, default='')
 
-    category = relationship("Category", back_populates="child_milestones", cascade="all, delete-orphan", single_parent=True)
-    age_range = relationship("AgeRange", back_populates="child_milestones", cascade="all, delete-orphan", single_parent=True)
-
+    category = relationship("Category",
+                            back_populates="child_milestones",
+                            cascade="all, delete-orphan",
+                            single_parent=True)
+    age_range = relationship("AgeRange",
+                             back_populates="child_milestones",
+                             cascade="all, delete-orphan",
+                             single_parent=True)
 
     def __init__(self, *args, **kwargs):
         '''Initializes an instance of the ChildMilestone class'''
@@ -36,7 +41,7 @@ class ChildMilestone(BaseModel, Base):
         )
 
     def to_dict(self):
-        '''Returns a dictionary representation of an instance of ChildMilestone'''
+        '''Returns a dictionary representation of ChildMilestone'''
         return {
             'id': self.child_milestone_id,
             'type': self.category.name,

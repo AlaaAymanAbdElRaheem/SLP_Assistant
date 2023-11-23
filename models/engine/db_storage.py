@@ -11,7 +11,11 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
 
 
-classes = {'ChildMilestone': ChildMilestone, 'AgeRange': AgeRange, 'Category': Category}
+classes = {
+    'ChildMilestone': ChildMilestone,
+    'AgeRange': AgeRange,
+    'Category': Category
+    }
 
 
 class DBStorage:
