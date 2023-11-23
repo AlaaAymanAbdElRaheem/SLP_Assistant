@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.containter {
+  margin: 20px auto;
+  max-width: 1000px;
+  position: relative;
+}
+
+.age-range {
+  border: none;
+  appearance: none;
+  height: 60px;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 20px;
+  border: 2px solid #e5e5e5;
+  border-radius: 20px;
+  background-image: linear-gradient(RGBA(37, 20, 37, 1), RGBA(1, 6, 19, 1));
+  color: #d08bde;
+  font-size: 20px;
+}
+
+option {
+  font-size: 20px;
+  text-align: center;
+}
+
+.containter::after {
+  content: "\25BC";
+  font-size: 30px;
+  color: #d08bde;
+  position: absolute;
+  right: 320px;
+  top: 33px;
+}
+
+/* .containter:hover::after {
+  color: #ff9379;
+} */
+
+.description {
+  font-size: 24px;
+  margin-top: 40px;
+  text-align: center;
+  /* margin-left: 30%; */
+  color: #7c378a;
+  font-style: bold;
+}
