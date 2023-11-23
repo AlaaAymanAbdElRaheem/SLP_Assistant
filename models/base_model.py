@@ -1,17 +1,29 @@
+#!/usr/bin/env python3
 ''' This module contains the BaseModel class
     This class is the base class for all other classes in this project
 '''
-import uuid
 import sqlalchemy
+from sqlalchemy import Column, String, DateTime
+from sqlalchemy.ext.declarative import declarative_base
+import models
 
 
+Base = declarative_base()
 
 class BaseModel:
-    def __init__(self, age_from, age_to, value)
-        self.id = str(uuid.uuid4())
-        self.age_from = age_from
-        self.age_to = age_to
-        self.value = value
+    '''This class defines the BaseModel class for all other classes'''
+    def __init__(self, *args, **kwargs):
+        '''This method initializes an instance of the BaseModel class'''
+        if kwargs:
+            for key, value in kwargs.items():
+                if key != "__class__":
+                    setattr(self, key, value)
 
-    def __str__(self):
-        return "[{}] ({}) {}".format(self.__class__.__name__, self.id, self.__dict__)
+    def save(self):
+        '''This method saves the instance to the database'''
+        models.storage.new(self)
+        models.storage.save()
+
+    def delete(self):
+        '''This method deletes the instance from the database'''
+        models.storage.delete(self)
