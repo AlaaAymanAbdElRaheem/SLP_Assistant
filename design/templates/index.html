@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="../static/img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="../static/styles/header.css" />
+    <link rel="stylesheet" href="../static/styles/footer.css" />
+    <link rel="stylesheet" href="../static/styles/common.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SLP Assistant</title>
+  </head>
+  <body>
+    <header>
+      <div class="head-color"></div>
+      <div class="logo"></div>
+      <nav>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+    </header>
+    <p class="description">
+      Integrated Scales of Development from Listen Learn and Talk
+    </p>
+    <div class="containter">
+      <select class="age-range">
+        <option value="">Please choose an age</option>
+        {% for category in categories %}
+        <option value="{{ category.age_from }} to {{ category.age_to }} Months">
+          {{ category.age_from }} to {{ category.age_to }} Months
+        </option>
+        {% endfor %}
+      </select>
+    </div>
+    <footer class="index-footer">
+      <p class="copyright">&copy; 2023 SLP Assistant</p>
+    </footer>
+  </body>
+</html>
