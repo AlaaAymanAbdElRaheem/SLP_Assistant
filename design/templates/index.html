@@ -25,9 +25,11 @@
     <div class="containter">
       <select class="age-range">
         <option value="">Please choose an age</option>
-        {% for category in categories %}
-        <option value="{{ category.age_from }} to {{ category.age_to }} Months">
-          {{ category.age_from }} to {{ category.age_to }} Months
+        {% for age_range in age_ranges %}
+        <option
+          value="{{ age_range.age_from }} to {{ age_range.age_to }} Months"
+        >
+          {{ age_range.age_from }} to {{ age_range.age_to }} Months
         </option>
         {% endfor %}
       </select>
