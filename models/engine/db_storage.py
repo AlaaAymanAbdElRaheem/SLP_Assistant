@@ -63,7 +63,9 @@ class DBStorage:
     def all(self, cls=None):
         '''Returns a dictionary of all objects in the database'''
         if cls:
-            objects = self.__session.query(classes[cls]).all()
+            if type(cls) == str:
+                cls = classes[cls]
+            objects = self.__session.query(cls).all()
         else:
             objects = []
             for cls in classes:
