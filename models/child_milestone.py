@@ -43,7 +43,7 @@ class ChildMilestone(BaseModel, Base):
     def to_dict(self):
         '''Returns a dictionary representation of ChildMilestone'''
         return {
-            'id': self.child_milestone_id,
+            'id': self.id,
             'type': self.category.name,
             'age_from': self.age_range.age_from,
             'age_to': self.age_range.age_to,
