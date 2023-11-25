@@ -10,6 +10,7 @@ table {
   border-spacing: 0;
   border: solid #97898d 1px;
   border-radius: 10px;
+  table-layout: fixed;
   width: 100%;
   /* margin-left: 20%; */
   margin-top: 20px;
@@ -17,6 +18,7 @@ table {
 th,
 td {
   border-left: solid #97898d 1px;
+  width: 100px;
   /* border-top: solid #97898d 1px; */
 }
 
