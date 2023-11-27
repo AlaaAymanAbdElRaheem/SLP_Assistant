@@ -30,6 +30,13 @@ def result_route():
     categories = storage.all(Category).values()
     return render_template('result.html', age_ranges=age_ranges, categories=categories)
 
+@app.route('/slp_assistant/about', strict_slashes=False)
+def about():
+    return render_template('about.html')
+
+@app.route('/slp_assistant/contact', strict_slashes=False)
+def contact():
+    return render_template('contact.html')
 
 
 if __name__ == '__main__':

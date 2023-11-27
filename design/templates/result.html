@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="../static/styles/footer.css" />
     <link rel="stylesheet" href="../static/styles/common.css" />
     <link rel="stylesheet" href="../static/styles/result.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="../static/scripts/slp_assistant.js"
+    ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SLP Assistant</title>
   </head>
@@ -15,9 +20,9 @@
       <div class="head-color"></div>
       <div class="logo"></div>
       <nav>
-        <a href="index.html">HOME</a>
-        <a href="about.html">ABOUT</a>
-        <a href="contact.html">CONTACT</a>
+        <a href="http://127.0.0.1:5000/slp_assistant">HOME</a>
+        <a href="http://127.0.0.1:5000/slp_assistant/about">ABOUT</a>
+        <a href="http://127.0.0.1:5000/slp_assistant/contact">CONTACT</a>
       </nav>
     </header>
     <p class="description">
@@ -28,15 +33,16 @@
         <option value="">Please choose an age</option>
         {% for age_range in age_ranges %}
         <option
+          data-id="{{ age_range.id }}"
           value="{{ age_range.age_from }} to {{ age_range.age_to }} Months"
         >
           {{ age_range.age_from }} to {{ age_range.age_to }} Months
         </option>
         {% endfor %}
       </select>
-      <p class="age-result-text">0 to 3 Months</p>
+      <p class="age-result-text"></p>
       <!-- This is the result of the age range -->
-      <table>
+      <table class="table">
         <thead class="table-head">
           <tr>
             {% for category in categories %}
@@ -46,12 +52,12 @@
         </thead>
         <tbody class="table-body">
           <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
+            <td class="listening"></td>
+            <td class="receptive_language"></td>
+            <td class="expressive_language"></td>
+            <td class="speech"></td>
+            <td class="cognition"></td>
+            <td class="social_communication"></td>
           </tr>
         </tbody>
       </table>

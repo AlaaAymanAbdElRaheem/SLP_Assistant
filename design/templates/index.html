@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="../static/styles/header.css" />
     <link rel="stylesheet" href="../static/styles/footer.css" />
     <link rel="stylesheet" href="../static/styles/common.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="../static/scripts/slp_assistant.js"
+    ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SLP Assistant</title>
   </head>
@@ -14,9 +19,9 @@
       <div class="head-color"></div>
       <div class="logo"></div>
       <nav>
-        <a href="index.html">HOME</a>
-        <a href="about.html">ABOUT</a>
-        <a href="contact.html">CONTACT</a>
+        <a href="http://127.0.0.1:5000/slp_assistant">HOME</a>
+        <a href="http://127.0.0.1:5000/slp_assistant/about">ABOUT</a>
+        <a href="http://127.0.0.1:5000/slp_assistant/contact">CONTACT</a>
       </nav>
     </header>
     <p class="description">
@@ -27,6 +32,7 @@
         <option value="">Please choose an age</option>
         {% for age_range in age_ranges %}
         <option
+          data-id="{{ age_range.id }}"
           value="{{ age_range.age_from }} to {{ age_range.age_to }} Months"
         >
           {{ age_range.age_from }} to {{ age_range.age_to }} Months
