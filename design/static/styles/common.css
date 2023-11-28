@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body{
+  font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
 .containter {
   margin: 20px auto;
   max-width: 1000px;

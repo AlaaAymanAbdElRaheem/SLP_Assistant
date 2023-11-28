@@ -8,7 +8,7 @@ from models import storage
 @app_views.route('/milestones/<age_range_id>', methods=['GET'], strict_slashes=False)
 def milestones_by_age_range(age_range_id):
     """ Retrieves all milestones for a given age range """
-    milestones = storage.get_milestones(age_range_id)
+    milestones = storage.get_milestones_by_age_range(age_range_id)
     if milestones is None:
         abort(404)
     return jsonify([milestone.to_dict() for milestone in milestones])
