@@ -15,11 +15,11 @@ $(document).ready(function () {
         let flag = 0;
         if (window.location.href === "http://127.0.0.1:5000/slp_assistant") {
           window.location.href = "http://127.0.0.1:5000/slp_assistant/result";
-          // window.location.href =
-          //   "http://127.0.0.1:5000/slp_assistant/result?value=" +
-          //   encodeURIComponent(value) +
-          //   "&id=" +
-          //   id;
+          window.location.href =
+            "http://127.0.0.1:5000/slp_assistant/result?value=" +
+            encodeURIComponent(value) +
+            "&id=" +
+            id;
           flag = 1;
         }
 
@@ -44,23 +44,6 @@ $(document).ready(function () {
     });
   });
 
-  // function addMilestones(data) {
-  //   $.each(data, function (index, milestone) {
-  //     if (milestone.type == "Listening") {
-  //       $(".listening").text(milestone.value);
-  //     } else if (milestone.type == "Receptive Language") {
-  //       $(".receptive_language").text(milestone.value);
-  //     } else if (milestone.type == "Expressive Language") {
-  //       $(".expressive_language").text(milestone.value);
-  //     } else if (milestone.type == "Speech") {
-  //       $(".speech").text(milestone.value);
-  //     } else if (milestone.type == "Cognition") {
-  //       $(".cognition").text(milestone.value);
-  //     } else if (milestone.type == "Social Communication") {
-  //       $(".social_communication").text(milestone.value);
-  //     }
-  //   });
-  // }
   function addMilestones(data) {
     let listeningText = "";
     let receptiveLanguageText = "";
