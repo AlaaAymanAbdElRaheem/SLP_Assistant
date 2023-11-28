@@ -1,19 +1,55 @@
 #!/usr/bin/node
 
 $(document).ready(function () {
-  $(".age-range").change(function () {
-    const id = $(this).find("option:selected").data("id");
-    console.log(id);
-    let value = $(this).val();
-
-    $(".age-result-text").text(value);
-    $(".result-container").css("visibility", "visible");
+  let id = 0;
+  function fetchMilestones() {
     $.ajax({
       url: "http://localhost:5001/api/v1/milestones/" + id,
       type: "GET",
       dataType: "json",
       success: addMilestones,
     });
+  }
+
+  // event handler for when the user selects a new age range
+  $(".age-range").change(function () {
+    id = $(this).find("option:selected").data("id");
+    console.log(id);
+    const value = $(this).val();
+
+    $(".age-result-text").text(value);
+    $(".result-container").css("visibility", "visible");
+    fetchMilestones(id);
+
+    // Enable/disable buttons based on option availability
+    let $selectedOption = $(this).find("option:selected");
+    $(".next-age-button").prop("disabled", !$selectedOption.next("option").length);
+    $(".prev-age-button").prop("disabled", !$selectedOption.prev("option").length);
+  });
+
+  // Event handlers for next and prev buttons
+  $(".next-age-button").click(function () {
+    let $select = $(".age-range");
+    let $selectedOption = $select.find("option:selected");
+    let $nextOption = $selectedOption.next("option");
+
+    if ($nextOption.length > 0) {
+      $selectedOption.prop("selected", false);
+      $nextOption.prop("selected", true);
+      $select.trigger("change"); // Trigger change event
+    }
+  });
+
+  $(".prev-age-button").click(function () {
+    let $select = $(".age-range");
+    let $selectedOption = $select.find("option:selected");
+    let $prevOption = $selectedOption.prev("option:not([disabled])"); // Ignore disabled options
+
+    if ($prevOption.length > 0) {
+      $selectedOption.prop("selected", false);
+      $prevOption.prop("selected", true);
+      $select.trigger("change");
+    }
   });
 
   function addMilestones(data) {

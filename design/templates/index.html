@@ -30,7 +30,7 @@
     </p>
     <div class="containter">
       <select class="age-range">
-        <option value="">Please choose an age</option>
+        <option selected="selected" disabled="disabled">Please choose an age</option>
         {% for age_range in age_ranges %}
         <option
           data-id="{{ age_range.id }}">
@@ -62,8 +62,8 @@
         </table>
     
         <div class="button-container">
-          <button class="button" id="prev_age">Previous</button>
-          <butten class="button" id = "next_age">Next</button>
+          <button type="button" class="prev-age-button">Previous</button>
+          <button type="button" class="next-age-button">Next</button>
         </div>
       </div>
     </div>
