@@ -9,7 +9,7 @@ body{
 
 .containter {
   margin: 20px auto;
-  max-width: 1000px;
+  max-width: 1400px;
   position: relative;
 }
 
@@ -32,14 +32,14 @@ option {
   text-align: center;
 }
 
-.containter::after {
+/* .containter::after {
   content: "\25BC";
   font-size: 30px;
   color: #d08bde;
   position: absolute;
   right: 320px;
   top: 33px;
-}
+} */
 
 /* .containter:hover::after {
   color: #ff9379;
@@ -58,7 +58,6 @@ option {
 .button-container .prev-age-button {
   display: inline-block;
   border-radius: 12px;
-  background-color: #008CBA;
   border: none;
   color: white;
   text-align: center;
@@ -71,6 +70,8 @@ option {
   background-image: linear-gradient(RGBA(37, 20, 37, 1), RGBA(1, 6, 19, 1));
   color: #d08bde;
 }
-.button-container .next-age-button {
-  margin-left: 5em;
+
+.button-container {
+  display: flex;
+  justify-content: center;
 }
