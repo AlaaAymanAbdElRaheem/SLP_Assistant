@@ -53,3 +53,24 @@ option {
   color: #7c378a;
   font-style: bold;
 }
+
+.button-container .next-age-button,
+.button-container .prev-age-button {
+  display: inline-block;
+  border-radius: 12px;
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  text-align: center;
+  padding: 15px 32px;
+  text-decoration: none;
+  margin: 4px 200px;
+  cursor: pointer;
+  width: 150px;
+  font-size: 17px;
+  background-image: linear-gradient(RGBA(37, 20, 37, 1), RGBA(1, 6, 19, 1));
+  color: #d08bde;
+}
+.button-container .next-age-button {
+  margin-left: 5em;
+}
