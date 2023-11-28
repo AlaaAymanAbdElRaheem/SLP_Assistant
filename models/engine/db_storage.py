@@ -73,16 +73,11 @@ class DBStorage:
         return {'{}.{}'.format(type(obj).__name__, obj.id):
                 obj for obj in objects}
         
-    def get_milestones(self, age_range_id):
+    def get_milestones_by_age_range(self, age_range_id):
         """reteurns a list of milestones for a given age range"""
         milestones = self.__session.query(ChildMilestone).filter_by(age_range_id=age_range_id).all()
         return milestones
     
-    def get_age_range_id(self, age_from):
-        """returns the id of an age range given the age_from value"""
-        age_range = self.__session.query(AgeRange).filter_by(age_from=age_from).first()
-        return age_range.id
-
     def close(self):
         '''Close the session'''
         self.__session.remove()

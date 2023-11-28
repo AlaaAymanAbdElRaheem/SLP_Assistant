@@ -2,92 +2,48 @@
 
 $(document).ready(function () {
   $(".age-range").change(function () {
-    // let id = $(this).attr("data-id");
+    const id = $(this).find('option:selected').data('id');
+    console.log(id);
     let value = $(this).val();
-    let age_from = value.split("to")[0];
+    if(window.location.pathname == "/") {
+      window.location.href = "/results/" + id;
+    }
+    $(".age-result-text").text(value);
     $.ajax({
-      url: "http://localhost:5001/api/v1/age_range_id/" + age_from,
+      url: "http://localhost:5001/api/v1/milestones/" + id,
       type: "GET",
       dataType: "json",
-      success: function (data) {
-        let id = data.age_range_id;
-
-        let flag = 0;
-        if (window.location.href === "http://127.0.0.1:5000/slp_assistant") {
-          window.location.href = "http://127.0.0.1:5000/slp_assistant/result";
-          // window.location.href =
-          //   "http://127.0.0.1:5000/slp_assistant/result?value=" +
-          //   encodeURIComponent(value) +
-          //   "&id=" +
-          //   id;
-          flag = 1;
-        }
-
-        if (flag == 1) {
-          // const urlParams = new URLSearchParams(window.location.search);
-          // value = urlParams.get("value");
-          // console.log(value);
-          // id = urlParams.get("id");
-          let params = new URL(document.location).searchParams;
-          value = params.get("value");
-          id = params.get("id");
-        }
-
-        $(".age-result-text").text(value);
-        $.ajax({
-          url: "http://localhost:5001/api/v1/milestones/" + id,
-          type: "GET",
-          dataType: "json",
-          success: addMilestones,
-        });
-      },
+      success: addMilestones
     });
   });
 
-  // function addMilestones(data) {
-  //   $.each(data, function (index, milestone) {
-  //     if (milestone.type == "Listening") {
-  //       $(".listening").text(milestone.value);
-  //     } else if (milestone.type == "Receptive Language") {
-  //       $(".receptive_language").text(milestone.value);
-  //     } else if (milestone.type == "Expressive Language") {
-  //       $(".expressive_language").text(milestone.value);
-  //     } else if (milestone.type == "Speech") {
-  //       $(".speech").text(milestone.value);
-  //     } else if (milestone.type == "Cognition") {
-  //       $(".cognition").text(milestone.value);
-  //     } else if (milestone.type == "Social Communication") {
-  //       $(".social_communication").text(milestone.value);
-  //     }
-  //   });
-  // }
   function addMilestones(data) {
-    let listeningText = "";
-    let receptiveLanguageText = "";
-    let expressiveLanguageText = "";
-    let speechText = "";
-    let cognitionText = "";
-    let socialCommunicationText = "";
+    let listeningText = "<ul>";
+    let receptiveLanguageText = "<ul>";
+    let expressiveLanguageText = "<ul>";
+    let speechText = "<ul>";
+    let cognitionText = "<ul>";
+    let socialCommunicationText = "<ul>";
 
     $.each(data, function (index, milestone) {
       switch (milestone.type) {
         case "Listening":
-          listeningText += milestone.value + "<br>";
+          listeningText += "<li>" + milestone.value + "</li>";
           break;
         case "Receptive Language":
-          receptiveLanguageText += milestone.value + "<br>";
+          receptiveLanguageText += "<li>" + milestone.value + "</li>";
           break;
         case "Expressive Language":
-          expressiveLanguageText += milestone.value + "<br>";
+          expressiveLanguageText += "<li>" + milestone.value + "</li>";
           break;
         case "Speech":
-          speechText += milestone.value + "<br>";
+          speechText += "<li>" + milestone.value + "</li>";
           break;
         case "Cognition":
-          cognitionText += milestone.value + "<br>";
+          cognitionText += "<li>" + milestone.value + "</li>";
           break;
         case "Social Communication":
-          socialCommunicationText += milestone.value + "<br>";
+          socialCommunicationText += "<li>" + milestone.value + "</li>";
           break;
       }
     });

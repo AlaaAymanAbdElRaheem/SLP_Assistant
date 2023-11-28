@@ -23,6 +23,17 @@ def page_not_found(error):
     """ 404 page not found """
     return make_response(jsonify({"error": "Not found"}), 404)
 
+@app.errorhandler(500)
+def handle_500(error):
+    original = getattr(error, "original_exception", None)
+
+    if original is None:
+        # direct 500 error, such as abort(500)
+        return make_response(jsonify({"error": "Internal Server Error"}), 500)
+
+    # wrapped unhandled error
+    return make_response(jsonify({"error": "Internal Server Error: " + str(original)}), 500)
+
 
 if __name__ == "__main__":
     host = getenv("SLP_API_HOST", default="0.0.0.0")

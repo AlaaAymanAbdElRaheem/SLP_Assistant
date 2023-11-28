@@ -33,9 +33,7 @@
         <option value="">Please choose an age</option>
         {% for age_range in age_ranges %}
         <option
-          data-id="{{ age_range.id }}"
-          value="{{ age_range.age_from }} to {{ age_range.age_to }} Months"
-        >
+          data-id="{{ age_range.id }}">
           {{ age_range.age_from }} to {{ age_range.age_to }} Months
         </option>
         {% endfor %}
@@ -61,6 +59,10 @@
           </tr>
         </tbody>
       </table>
+    </div>
+    <div class="button-container">
+      <button class="button" id="prev_age">Previous</button>
+      <butten class="button" id = "next_age">Next</button>
     </div>
     <footer>
       <p class="copyright">&copy; 2023 SLP Assistant</p>
