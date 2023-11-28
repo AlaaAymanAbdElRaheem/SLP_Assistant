@@ -59,5 +59,6 @@ $(document).ready(function () {
 
     $(".list").css("margin-left", "10px");
     $(".li").css("margin-bottom", "5px");
+    // $(".list").css("text-wrap", "balance");
   }
 });
