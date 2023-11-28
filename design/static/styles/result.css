@@ -45,7 +45,7 @@ td {
   padding-left: 10px;
   vertical-align: top;
   text-align: left;
-  text-overflow: ellipsis;
-  /* overflow: hidden; */
-  /* white-space: nowrap; */
+  overflow: hidden;
+  /* text-overflow: ellipsis;
+  white-space: nowrap; */
 }
