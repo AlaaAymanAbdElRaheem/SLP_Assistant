@@ -18,17 +18,11 @@ app = Flask(__name__)
 
 
 @app.route('/slp_assistant', strict_slashes=False)
-def index_route():
-    """ display AgeRange objects """
-    age_ranges = storage.all(AgeRange).values()
-    return render_template('index.html', age_ranges=age_ranges)
-
-@app.route('/slp_assistant/result', strict_slashes=False)
 def result_route():
     """ display AgeRange objects """
     age_ranges = storage.all(AgeRange).values()
     categories = storage.all(Category).values()
-    return render_template('result.html', age_ranges=age_ranges, categories=categories)
+    return render_template('index.html', age_ranges=age_ranges, categories=categories)
 
 @app.route('/slp_assistant/about', strict_slashes=False)
 def about():
