@@ -8,7 +8,12 @@
   margin-top: 20px;
   color: #7c378a;
 }
-
+.select-arrow{
+  margin-left: -35px;
+  font-size: 40px;
+  display: inline-block;
+  color: #d08bde;
+}
 table {
   border-collapse: separate;
   border-spacing: 0;
