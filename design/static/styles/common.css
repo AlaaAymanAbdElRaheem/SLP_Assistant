@@ -3,13 +3,13 @@
   padding: 0;
 }
 
-body{
-  font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+body {
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .containter {
   margin: 20px auto;
-  max-width: 1400px;
+  max-width: 1320px;
   position: relative;
 }
 
@@ -63,7 +63,7 @@ option {
   text-align: center;
   padding: 15px 32px;
   text-decoration: none;
-  margin: 4px 200px;
+  margin: 4px 260px;
   cursor: pointer;
   width: 150px;
   font-size: 17px;

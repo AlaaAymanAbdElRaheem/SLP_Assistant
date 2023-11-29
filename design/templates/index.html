@@ -30,17 +30,18 @@
     </p>
     <div class="containter">
       <div class="select-container">
-      <select class="age-range">
-        <option selected="selected" disabled="disabled">Please choose an age</option>
-        {% for age_range in age_ranges %}
-        <option
-          data-id="{{ age_range.id }}">
-          {{ age_range.age_from }} to {{ age_range.age_to }} Months
-        </option>
-        {% endfor %}
-      </select>
-      <span class="select-arrow">&DownArrow;</span>
-    </div>
+        <select class="age-range">
+          <option selected="selected" disabled="disabled">
+            Please choose an age
+          </option>
+          {% for age_range in age_ranges %}
+          <option data-id="{{ age_range.id }}">
+            {{ age_range.age_from }} to {{ age_range.age_to }} Months
+          </option>
+          {% endfor %}
+        </select>
+        <span class="select-arrow">&#x25BC;</span>
+      </div>
       <div class="result-container">
         <p class="age-result-text"></p>
         <!-- This is the result of the age range -->
@@ -63,7 +64,7 @@
             </tr>
           </tbody>
         </table>
-    
+
         <div class="button-container">
           <button type="button" class="prev-age-button">Previous</button>
           <button type="button" class="next-age-button">Next</button>

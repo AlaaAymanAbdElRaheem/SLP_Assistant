@@ -8,8 +8,10 @@
   margin-top: 20px;
   color: #7c378a;
 }
-.select-arrow{
-  margin-left: -35px;
+.select-arrow {
+  position: relative;
+  top: 7px;
+  margin-left: -65px;
   font-size: 40px;
   display: inline-block;
   color: #d08bde;
