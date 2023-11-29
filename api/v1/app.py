@@ -12,10 +12,10 @@ app.register_blueprint(app_views)
 cors = CORS(app, resources={r"/api/v1/*": {"origins": "*"}})
 
 
-# @app.teardown_appcontext
-# def teardown_appcontext(self):
-#     """ Closes the storage """
-#     storage.close()
+@app.teardown_appcontext
+def teardown_appcontext(self):
+    """ Closes the storage """
+    storage.close()
 
 
 @app.errorhandler(404)

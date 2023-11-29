@@ -7,6 +7,7 @@ from models.base_model import BaseModel, Base
 from models.child_milestone import ChildMilestone
 from models.age_range import AgeRange
 from models.category import Category
+import sqlalchemy
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
 
@@ -58,7 +59,7 @@ class DBStorage:
         session_factory = sessionmaker(bind=self.__engine,
                                        expire_on_commit=False)
         Session = scoped_session(session_factory)
-        self.__session = Session()
+        self.__session = Session
 
     def all(self, cls=None):
         '''Returns a dictionary of all objects in the database'''
