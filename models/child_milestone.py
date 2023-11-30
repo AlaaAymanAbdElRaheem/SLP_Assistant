@@ -47,5 +47,6 @@ class ChildMilestone(BaseModel, Base):
             'type': self.category.name,
             'age_from': self.age_range.age_from,
             'age_to': self.age_range.age_to,
-            'value': self.value
+            'value': self.value,
+            '__class__': self.__class__.__name__
         }
