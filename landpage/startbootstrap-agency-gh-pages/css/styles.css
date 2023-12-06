@@ -2973,7 +2973,7 @@ fieldset:disabled .btn {
 .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #ffc800;
-  --bs-btn-border-color: #ffc800;
+  /* --bs-btn-border-color: #ffc800; */
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #d9aa00;
   --bs-btn-hover-border-color: #cca000;
@@ -2985,6 +2985,7 @@ fieldset:disabled .btn {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #ffc800;
   --bs-btn-disabled-border-color: #ffc800;
+  background-image: linear-gradient(RGBA(37, 20, 37, 1), RGBA(1, 6, 19, 1));
 }
 
 .btn-secondary {
@@ -11255,7 +11256,7 @@ p {
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.95rem;
-  color: #fff;
+  color: #7c378a;
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active,
