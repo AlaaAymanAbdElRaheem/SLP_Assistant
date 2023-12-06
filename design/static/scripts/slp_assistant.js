@@ -4,7 +4,7 @@ $(document).ready(function () {
   let id = 0;
   function fetchMilestones() {
     $.ajax({
-      url: "http://localhost:5001/api/v1/milestones/" + id,
+      url: "/api/v1/milestones/" + id,
       type: "GET",
       dataType: "json",
       success: addMilestones,
@@ -14,7 +14,6 @@ $(document).ready(function () {
   // event handler for when the user selects a new age range
   $(".age-range").change(function () {
     id = $(this).find("option:selected").data("id");
-    console.log(id);
     const value = $(this).val();
 
     $(".age-result-text").text(value);
@@ -93,6 +92,7 @@ $(document).ready(function () {
     $(".cognition").html(cognitionText);
     $(".social_communication").html(socialCommunicationText);
 
+    $(".list").css("padding-left", "0px");
     $(".list").css("margin-left", "10px");
     $(".li").css("margin-bottom", "5px");
     // $(".list").css("text-wrap", "balance");

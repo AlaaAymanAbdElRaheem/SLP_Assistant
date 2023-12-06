@@ -1,15 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .containter {
-  margin: 20px auto;
-  max-width: 1320px;
+  margin: 0 auto;
+  max-width: 90%;
   position: relative;
 }
 
@@ -74,4 +69,175 @@ option {
 .button-container {
   display: flex;
   justify-content: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .body-container {
+    width: 100%;
+  }
+  .containter {
+    width: 90%;
+  }
+
+  .age-range {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .button-container .next-age-button,
+  .button-container .prev-age-button {
+    margin: 4px 10px;
+  }
+
+  .description {
+    margin-left: 10%;
+  }
+
+  .select-arrow {
+    padding:10px;
+  }
+
+  .button-container {
+    margin-left: 10%;
+  }
+
+  .button-container .next-age-button,
+  .button-container .prev-age-button {
+    width: 100px;
+  }
+
+  .button-container .next-age-button {
+    margin-left: 20px;
+  }
+
+  .button-container .prev-age-button {
+    margin-right: 20px;
+  }
+
+  .result-container {
+    margin-left: 10%;
+  }
+
+  .result-container .age-result-text {
+    font-size: 20px;
+  }
+
+  .result-container table {
+    width: 80%;
+  }
+
+  .result-container th {
+    font-size: 15px;
+  }
+
+  .result-container td {
+    font-size: 15px;
+  }
+
+  nav {
+    font-size: 11px;
+    right: 5px;
+  }
+
+  .logo {
+    height: 100px;
+    width: 100px;
+    background-size: 100px 100px;
+    top: 0;
+    left:0;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  table {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .body-container {
+    width: 100%;
+  }
+  .containter {
+    width: 90%;
+  }
+
+  .age-range {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .button-container .next-age-button,
+  .button-container .prev-age-button {
+    margin: 4px 10px;
+  }
+
+  .description {
+    margin-left: 10%;
+  }
+
+  .select-arrow {
+    padding:10px; 
+  }
+
+  .button-container {
+    margin-left: 10%;
+  }
+
+  .button-container .next-age-button,
+  .button-container .prev-age-button {
+    width: 100px;
+  }
+
+  .button-container .next-age-button {
+    margin-left: 20px;
+  }
+
+  .button-container .prev-age-button {
+    margin-right: 20px;
+  }
+
+  .result-container {
+    margin-left: 10%;
+  }
+
+  .result-container .age-result-text {
+    font-size: 20px;
+  }
+
+  .result-container table {
+    width: 80%;
+  }
+
+  .result-container th {
+    font-size: 15px;
+  }
+
+  .result-container td {
+    font-size: 15px;
+  }
+
+  nav {
+    font-size: 11px;
+    right: 5px;
+  }
+
+  .logo {
+    height: 100px;
+    width: 100px;
+    background-size: 100px 100px;
+    top: 0;
+    left:0;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  table {
+    width: 70%;
+  }
 }
