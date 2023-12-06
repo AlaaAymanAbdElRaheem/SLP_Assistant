@@ -29,4 +29,5 @@ class Category(BaseModel, Base):
     def to_dict(self):
         '''Returns a dictionary representation of an instance of Category'''
         return {'id': self.id,
-                'name': self.name}
+                'name': self.name,
+                '__class__': self.__class__.__name__}

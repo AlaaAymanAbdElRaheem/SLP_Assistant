@@ -32,4 +32,5 @@ class AgeRange(BaseModel, Base):
         '''Returns a dictionary representation of an instance of AgeRange'''
         return {'id': self.id,
                 'age_from': self.age_from,
-                'age_to': self.age_to}
+                'age_to': self.age_to,
+                '__class__': self.__class__.__name__}
