@@ -28,10 +28,10 @@ def handle_500(error):
     original = getattr(error, "original_exception", None)
 
     if original is None:
-        # direct 500 error, such as abort(500)
+        """ direct 500 error, such as abort(500)"""
         return make_response(jsonify({"error": "Internal Server Error"}), 500)
 
-    # wrapped unhandled error
+    """wrapped unhandled error"""
     return make_response(jsonify({"error": "Internal Server Error: " + str(original)}), 500)
 
 

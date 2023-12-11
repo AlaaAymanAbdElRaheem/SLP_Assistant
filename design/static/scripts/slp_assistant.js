@@ -22,8 +22,14 @@ $(document).ready(function () {
 
     // Enable/disable buttons based on option availability
     let $selectedOption = $(this).find("option:selected");
-    $(".next-age-button").prop("disabled", !$selectedOption.next("option").length);
-    $(".prev-age-button").prop("disabled", !$selectedOption.prev("option").length);
+    $(".next-age-button").prop(
+      "disabled",
+      !$selectedOption.next("option").length
+    );
+    $(".prev-age-button").prop(
+      "disabled",
+      !$selectedOption.prev("option").length
+    );
   });
 
   // Event handlers for next and prev buttons
@@ -51,6 +57,7 @@ $(document).ready(function () {
     }
   });
 
+  //adding data to the table in html
   function addMilestones(data) {
     let listeningText = "<ul class='list'>";
     let receptiveLanguageText = "<ul class='list'>";
@@ -92,9 +99,9 @@ $(document).ready(function () {
     $(".cognition").html(cognitionText);
     $(".social_communication").html(socialCommunicationText);
 
+    // Styling the list
     $(".list").css("padding-left", "0px");
     $(".list").css("margin-left", "10px");
     $(".li").css("margin-bottom", "5px");
-    // $(".list").css("text-wrap", "balance");
   }
 });

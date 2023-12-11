@@ -17,7 +17,7 @@ Servers and domain name were provided to us by ALX Software Engineering Program.
 
 ## What is SLP Assistant?
 
-SLP Assistant is a website aimed to help **speach and language phasologists** and making their job easier in any way we could.
+SLP Assistant is a website aimed to help **speach and language Pathologists** and making their job easier in any way we could.
 
 SLP Assistant offers an easy way to access to the **Integrated Scales of Development** at any time and navigate through it with ease so the SLP will not have to worry about looking up data during each assesment, and focus on the assessment process.
 
@@ -27,10 +27,10 @@ This is the initial version of the project and we are planning on making it bett
 
 ## Built with
 
-| Category   | Technologies |
-|------------|--------------|
-| Front-end  | HTML, CSS, JavaScrip, Jquery |
-| Back-end   | Python, Flask, MySQL Database |
+| Category   | Technologies                                                   |
+| ---------- | -------------------------------------------------------------- |
+| Front-end  | HTML, CSS, JavaScrip, Jquery                                   |
+| Back-end   | Python, Flask, MySQL Database                                  |
 | Deployment | nginx, Hproxy, ufw, SSL/TLS certificate from certbot, gunicorn |
 
 ## Features

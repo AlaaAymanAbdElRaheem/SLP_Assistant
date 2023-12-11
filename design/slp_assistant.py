@@ -11,10 +11,10 @@ from models.category import Category
 app = Flask(__name__)
 
 
-# @app.teardown_appcontext
-# def teardown_db(error):
-#     """ close storage """
-#     storage.close()
+@app.teardown_appcontext
+def teardown_db(error):
+    """ close storage """
+    storage.close()
 
 
 @app.route('/slp_assistant', strict_slashes=False)
@@ -26,10 +26,12 @@ def result_route():
 
 @app.route('/about', strict_slashes=False)
 def about():
+    """about page"""
     return render_template('about.html')
 
 @app.route('/contact', strict_slashes=False)
 def contact():
+    """contact page"""""
     return render_template('contact.html')
 
 
