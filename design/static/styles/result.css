@@ -1,5 +1,7 @@
 .result-container {
   visibility: hidden;
+  width: 100%;
+  overflow-x: scroll;
 }
 
 .age-result-text {
@@ -17,12 +19,17 @@
   color: #d08bde;
 }
 table {
+  /* display: block; */
   border-collapse: separate;
   border-spacing: 0;
   border: solid #97898d 1px;
   border-radius: 10px;
   table-layout: fixed;
   width: 100%;
+  /* max-width: -moz-fit-content;
+  max-width: fit-content; */
+  /* overflow-x: auto; */
+
   /* margin-right: 0%; */
   margin-top: 20px;
 }

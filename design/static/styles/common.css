@@ -8,6 +8,22 @@ body {
   position: relative;
 }
 
+/* .containter ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  opacity: 0.5;
+  z-index: -1;
+} */
+
 .age-range {
   border: none;
   appearance: none;
@@ -71,7 +87,6 @@ option {
   justify-content: center;
 }
 
-
 @media only screen and (max-width: 600px) {
   .body-container {
     width: 100%;
@@ -95,7 +110,7 @@ option {
   }
 
   .select-arrow {
-    padding:10px;
+    padding: 10px;
   }
 
   .button-container {
@@ -145,7 +160,7 @@ option {
     width: 100px;
     background-size: 100px 100px;
     top: 0;
-    left:0;
+    left: 0;
   }
 
   header {
@@ -153,7 +168,12 @@ option {
   }
 
   table {
-    width: 70%;
+    display: block;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    /* margin: 0 auto; */
+    overflow-x: auto;
+    white-space: nowrap;
   }
 }
 
@@ -180,7 +200,7 @@ option {
   }
 
   .select-arrow {
-    padding:10px; 
+    padding: 10px;
   }
 
   .button-container {
@@ -230,7 +250,7 @@ option {
     width: 100px;
     background-size: 100px 100px;
     top: 0;
-    left:0;
+    left: 0;
   }
 
   header {
@@ -238,6 +258,11 @@ option {
   }
 
   table {
-    width: 70%;
+    display: block;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    /* margin: 0 auto; */
+    overflow-x: auto;
+    white-space: nowrap;
   }
 }
