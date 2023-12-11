@@ -28,13 +28,12 @@ option {
   text-align: center;
 }
 
-
 .description {
   font-size: 24px;
   margin-top: 40px;
   text-align: center;
   color: #7c378a;
-  font-style: bold;
+  font-weight: bold;
 }
 
 .button-container .next-age-button,
@@ -69,7 +68,7 @@ option {
   }
 
   .age-range {
-    width: 80%;    /* white-space: nowrap; */
+    width: 80%; /* white-space: nowrap; */
     margin-left: 10%;
   }
 

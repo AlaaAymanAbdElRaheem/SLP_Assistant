@@ -5,7 +5,9 @@ from api.v1.views import app_views
 from flask import jsonify, abort, request
 from models import storage
 
-@app_views.route('/milestones/<age_range_id>', methods=['GET'], strict_slashes=False)
+
+@app_views.route('/milestones/<age_range_id>',
+                 methods=['GET'], strict_slashes=False)
 def milestones_by_age_range(age_range_id):
     """ Retrieves all milestones for a given age range """
     milestones = storage.get_milestones_by_age_range(age_range_id)

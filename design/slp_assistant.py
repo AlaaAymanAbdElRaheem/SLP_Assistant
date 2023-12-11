@@ -22,12 +22,15 @@ def result_route():
     """ display AgeRange objects """
     age_ranges = storage.all(AgeRange).values()
     categories = storage.all(Category).values()
-    return render_template('index.html', age_ranges=age_ranges, categories=categories)
+    return render_template('index.html',
+                           age_ranges=age_ranges, categories=categories)
+
 
 @app.route('/about', strict_slashes=False)
 def about():
     """about page"""
     return render_template('about.html')
+
 
 @app.route('/contact', strict_slashes=False)
 def contact():

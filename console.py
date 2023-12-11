@@ -10,7 +10,8 @@ from models.category import Category
 import shlex  # for splitting the line along spaces except in double quotes
 
 
-classes = {"ChildMilestone": ChildMilestone, "BaseModel": BaseModel, "AgeRange": AgeRange, "Category": Category}
+classes = {"ChildMilestone": ChildMilestone,
+           "BaseModel": BaseModel, "AgeRange": AgeRange, "Category": Category}
 
 
 class SLPCommand(cmd.Cmd):
@@ -42,10 +43,10 @@ class SLPCommand(cmd.Cmd):
                 else:
                     try:
                         value = int(value)
-                    except:
+                    except ValueError:
                         try:
                             value = float(value)
-                        except:
+                        except ValueError:
                             continue
                 new_dict[key] = value
         return new_dict
@@ -98,7 +99,6 @@ class SLPCommand(cmd.Cmd):
         print("[", end="")
         print(", ".join(obj_list), end="")
         print("]")
-
 
 
 if __name__ == '__main__':
