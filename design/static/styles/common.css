@@ -170,6 +170,7 @@ option {
 
   table {
     display: block;
+    table-layout: fixed;
     /* max-width: -moz-fit-content;
     max-width: fit-content; */
     /* margin: 0 auto; */
@@ -261,6 +262,7 @@ option {
 
   table {
     display: block;
+    table-layout: fixed;
     /* max-width: -moz-fit-content;
     max-width: fit-content; */
     /* margin: 0 auto; */
