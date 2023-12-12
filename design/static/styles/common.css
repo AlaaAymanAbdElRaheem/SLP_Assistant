@@ -137,8 +137,12 @@ option {
     overflow-x: auto;
   }
 
-  .copy-right {
-    font-size: 10px;
+  .copyright {
+    font-size: 5px;
+  }
+
+  footer {
+    height: 10px;
   }
 }
 
@@ -220,7 +224,11 @@ option {
     overflow-x: auto;
   }
 
-  .copy-right {
-    font-size: 10px;
+  .copyright {
+    font-size: 5px;
+  }
+
+  footer {
+    height: 10px;
   }
 }
