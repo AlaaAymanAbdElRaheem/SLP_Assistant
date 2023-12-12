@@ -2,7 +2,7 @@
 footer {
   height: 40px;
   width: 100%;
-  font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* border-top: 1px solid #e5e5e5; */
 }
 .copyright {
@@ -10,6 +10,6 @@ footer {
   margin-right: 30px;
 }
 
-.index-footer {
+/* .index-footer {
   margin-top: 320px;
-}
+} */
