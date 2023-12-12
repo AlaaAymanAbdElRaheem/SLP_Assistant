@@ -85,10 +85,6 @@ option {
     padding: 10px;
   }
 
-  .button-container {
-    margin-right: 70px;
-  }
-
   .button-container .next-age-button,
   .button-container .prev-age-button {
     width: 100px;
@@ -102,13 +98,8 @@ option {
     margin-right: 20px;
   }
 
-  /* .result-container {
-    margin-left: 10%;
-  } */
-
   .result-container .age-result-text {
     font-size: 20px;
-    margin-right: 70px;
   }
 
   .result-container table {
@@ -173,10 +164,6 @@ option {
     padding: 10px;
   }
 
-  .button-container {
-    margin-right: 70px;
-  }
-
   .button-container .next-age-button,
   .button-container .prev-age-button {
     width: 100px;
@@ -190,13 +177,8 @@ option {
     margin-right: 20px;
   }
 
-  /* .result-container {
-    margin-left: 5%;
-  } */
-
   .result-container .age-result-text {
     font-size: 20px;
-    margin-right: 70px;
   }
 
   .result-container table {
