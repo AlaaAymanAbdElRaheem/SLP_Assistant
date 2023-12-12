@@ -91,11 +91,11 @@ option {
   }
 
   .button-container .next-age-button {
-    margin-left: 40px;
+    margin-left: 60px;
   }
 
   .button-container .prev-age-button {
-    margin-right: 40px;
+    margin-right: 60px;
   }
 
   .result-container .age-result-text {
