@@ -64,7 +64,7 @@ option {
     width: 100%;
   }
   .containter {
-    width: 90%;
+    width: 100%;
   }
 
   .age-range {
@@ -102,9 +102,9 @@ option {
     margin-right: 20px;
   }
 
-  .result-container {
+  /* .result-container {
     margin-left: 10%;
-  }
+  } */
 
   .result-container .age-result-text {
     font-size: 20px;
@@ -112,7 +112,7 @@ option {
   }
 
   .result-container table {
-    width: 80%;
+    width: 100%;
   }
 
   .result-container th {
@@ -152,7 +152,7 @@ option {
     width: 100%;
   }
   .containter {
-    width: 90%;
+    width: 100%;
   }
 
   .age-range {
@@ -190,9 +190,9 @@ option {
     margin-right: 20px;
   }
 
-  .result-container {
-    margin-left: 10%;
-  }
+  /* .result-container {
+    margin-left: 5%;
+  } */
 
   .result-container .age-result-text {
     font-size: 20px;
@@ -200,7 +200,7 @@ option {
   }
 
   .result-container table {
-    width: 80%;
+    width: 100%;
   }
 
   .result-container th {
