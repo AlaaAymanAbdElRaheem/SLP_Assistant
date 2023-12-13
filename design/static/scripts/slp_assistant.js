@@ -91,7 +91,7 @@ $(document).ready(function () {
           break;
       }
     });
-
+    // convert the text to html
     $('.listening').html(listeningText);
     $('.receptive_language').html(receptiveLanguageText);
     $('.expressive_language').html(expressiveLanguageText);

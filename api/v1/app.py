@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Flask app """
+"""Module containing the flask app and the error handlers"""
 
 from flask import Flask, make_response, jsonify
 from models import storage
@@ -26,6 +26,7 @@ def page_not_found(error):
 
 @app.errorhandler(500)
 def handle_500(error):
+    """ 500 internal server error """
     original = getattr(error, "original_exception", None)
 
     if original is None:

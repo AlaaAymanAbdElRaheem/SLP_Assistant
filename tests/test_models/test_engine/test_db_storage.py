@@ -58,30 +58,3 @@ test_db_storage.py'])
                              "{:s} method needs a docstring".format(func[0]))
             self.assertTrue(len(func[1].__doc__) >= 1,
                             "{:s} method needs a docstring".format(func[0]))
-
-# class TestDBStorage(unittest.TestCase):
-#     '''Test if DB Storage is working correctly'''
-#     def setUp(self):
-#         '''Set up method'''
-#         self.db = DBStorage
-#         self.db.reload()
-
-#     def tearDown(self):
-#         '''Tear down method'''
-#         self.db.close()
-
-#     def test_create(self):
-#         '''Test if we can create an object'''
-#         new_base = BaseModel()
-#         new_base.name = "SLP"
-#         new_base.save()
-#         self.assertTrue(new_base.id in models.storage.all())
-
-#     def test_delete(self):
-#         '''Test if we can delete an object'''
-#         new_base = BaseModel()
-#         new_base.name = "SLP"
-#         new_base.save()
-#         self.assertTrue(new_base.id in models.storage.all())
-#         self.db.delete(new_base)
-#         self.assertFalse(new_base.id in models.storage.all())
