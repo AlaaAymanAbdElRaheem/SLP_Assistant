@@ -11,19 +11,48 @@ Everything from the design to the code and server configuration and deployment w
 
 Servers and domain name were provided to us by ALX Software Engineering Program.
 
-## Website URL
+### Website URL
 
 <https://slp-assistant.hlbs0k72u.tech>
 
+### Landing Page
+
+<https://alaaaymanabdelraheem.github.io/SLP_Assistant/>
+
 ## What is SLP Assistant?
 
-SLP Assistant is a website aimed to help **speach and language Pathologists** and making their job easier in any way we could.
+SLP Assistant is a website aimed to help **speech and language Pathologists** and making their job easier in any way we could.
 
 SLP Assistant offers an easy way to access to the **Integrated Scales of Development** at any time and navigate through it with ease so the SLP will not have to worry about looking up data during each assesment, and focus on the assessment process.
 
 It was all done in the hope to help them in their mission to help as many children as possible
 
 This is the initial version of the project and we are planning on making it better, with more featuers and more user friendly.
+
+## Story behind the project
+
+The idea came from Alaa, who is really passionate specialization in **phonetics and linguistics** and also about being a software engineer. wanting to merge the two fields together, she came up with the idea of making a website that will help **speech and language pathologists** in their job.
+
+She reached out to SLPs and asked them about the problems they face in their job and the tasks that they find time consuming, collected the answer and we started dicussing what we can do to help them.
+
+Some answers were:
+
+* Looking up data and documents during the assessment process.
+* Having to carry a lot of papers and documents with them.
+* Having to look up each child data history that they have worked with before.
+
+We wanted to solve all of them at first and we had too many things we wanted to do, but we had to start with something simple, that fits our 2 weeks deadline, so we decided to start with implementing an wasy way to access the Integrated Scales of Development so they will not have to worry about looking up data during each assesment, and focus on the assessment process.
+
+We are happy that our project will be of help to them, and we already planned our next features to implement, we wish to reach out to more SLPs and get more feedback and ideas to make our project better.
+
+## How to use SLP Assistant?
+
+Select the age range you want to assess from the dropdown menu and a table will appear with the Integrated Scales of Development for that age range.
+
+You can navigate through the Integrated Scales of Development with ease with the left and right buttons.
+
+<!-- Website image -->
+<img src="https://github.com/AlaaAymanAbdElRaheem/SLP_Assistant/blob/main/design/static/img/website_image.png" alt="Website image" width="700"/>
 
 ## Built with
 
@@ -35,9 +64,9 @@ This is the initial version of the project and we are planning on making it bett
 
 ## Features
 
-- Easy access to the Integrated Scales of Development
-- Easy navigation through the Integrated Scales of Development with a simple click to two buttons left and right.
-- A simple and easy to use interface.
+* Easy access to the Integrated Scales of Development
+* Easy navigation through the Integrated Scales of Development with a simple click to two buttons left and right.
+* A simple and easy to use interface.
 
 ## Contributers
 
