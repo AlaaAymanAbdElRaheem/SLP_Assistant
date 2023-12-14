@@ -4,6 +4,15 @@
   width: 100%;
 }
 
+.select-arrow {
+  position: relative;
+  top: 7px;
+  margin-left: -65px;
+  font-size: 40px;
+  display: inline-block;
+  color: rgb(208, 139, 222);
+}
+
 .age-result-text {
   font-size: 24px;
   text-align: center;
