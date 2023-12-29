@@ -69,25 +69,25 @@ $(document).ready(function () {
     $.each(data, function (index, milestone) {
       switch (milestone.type) {
         case 'Listening':
-          listeningText += "<li class='li'>" + milestone.value + '</li>';
+          listeningText += "<li class='li results'>" + milestone.value + '</li>';
           break;
         case 'Receptive Language':
           receptiveLanguageText +=
-            "<li class='li'>" + milestone.value + '</li>';
+            "<li class='li results'>" + milestone.value + '</li>';
           break;
         case 'Expressive Language':
           expressiveLanguageText +=
-            "<li class='li'>" + milestone.value + '</li>';
+            "<li class='li results'>" + milestone.value + '</li>';
           break;
         case 'Speech':
-          speechText += "<li class='li'>" + milestone.value + '</li>';
+          speechText += "<li class='li results'>" + milestone.value + '</li>';
           break;
         case 'Cognition':
-          cognitionText += "<li class='li'>" + milestone.value + '</li>';
+          cognitionText += "<li class='li results'>" + milestone.value + '</li>';
           break;
         case 'Social Communication':
           socialCommunicationText +=
-            "<li class='li'>" + milestone.value + '</li>';
+            "<li class='li results'>" + milestone.value + '</li>';
           break;
       }
     });
