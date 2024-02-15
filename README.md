@@ -69,10 +69,10 @@ You can navigate through the Integrated Scales of Development with ease with the
 * A simple and easy to use interface.
 
 ## Video Demo
-https://github.com/AlaaAymanAbdElRaheem/SLP_Assistant/assets/125518249/39eaf49b-b358-49de-9aa2-fb2161ea2037
+https://github.com/AlaaAymanAbdElRaheem/SLP_Assistant/assets/125518249/b74df565-5a20-484e-b200-4ddec8f3cbd6
 
 ## Mobile view
-https://github.com/AlaaAymanAbdElRaheem/SLP_Assistant/assets/125518249/1b43b3d5-b93b-437c-8181-b5d64d8c487b
+https://github.com/AlaaAymanAbdElRaheem/SLP_Assistant/assets/125518249/db8a9074-572d-4296-b9c0-56166aaf3c1b
 
 ## Contributers
 
