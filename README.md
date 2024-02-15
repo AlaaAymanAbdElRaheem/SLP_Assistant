@@ -68,6 +68,12 @@ You can navigate through the Integrated Scales of Development with ease with the
 * Easy navigation through the Integrated Scales of Development with a simple click to two buttons left and right.
 * A simple and easy to use interface.
 
+## Video Demo
+https://github.com/AlaaAymanAbdElRaheem/SLP_Assistant/assets/125518249/39eaf49b-b358-49de-9aa2-fb2161ea2037
+
+## Mobile view
+https://github.com/AlaaAymanAbdElRaheem/SLP_Assistant/assets/125518249/1b43b3d5-b93b-437c-8181-b5d64d8c487b
+
 ## Contributers
 
 [Yasmeen Hany](https://github.com/Eileanora)
